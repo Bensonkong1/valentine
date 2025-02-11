@@ -1,32 +1,50 @@
 body {
     text-align: center;
-    background-color: pink;
-    font-family: Arial, sans-serif;
+    background-color: #ffdde1;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ff4d6d;
+}
+
+.cute-image {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 button {
     font-size: 20px;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 12px 24px;
+    border: none;
     cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 10px;
 }
 
 #yesBtn {
-    background-color: green;
+    background-color: #ff69b4;
     color: white;
-    border: none;
 }
 
 #noBtn {
-    background-color: red;
+    background-color: #ff6b6b;
     color: white;
-    border: none;
     position: absolute;
 }
+
 @keyframes fall {
     from { transform: translateY(0); }
     to { transform: translateY(100vh); }
