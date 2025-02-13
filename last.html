@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最后的选择！🤔</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="change-image" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2lnd2p6cXBkZnZscWdlOXVyNzNob2l5cTl6M3lpNDg3MjRscm9iMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KztT2c4u8mYYUiMKdJ/giphy.gif" 
+             alt="Cute Valentine Gif" class="cute-image">
+        <h1>到了最后选择环节咯</h1>
+        <h1>请选择</h1>
+
+        <button onclick="goBack()">去最后一页♡♡♡</button>
+        <button onclick="warnUser()">❌ 不要点这里 ❌</button>
+    </div>
+
+    <script>
+        let warnings = [
+            "你确定吗？😳",
+            "真的确定吗？🤨",
+            "最后一次机会！🙄",
+            "好吧... 你自己找的 😏"
+        ];
+        let count = 0;
+
+        function warnUser() {
+            let img = document.getElementById("change-image");
+
+            if (count < warnings.length) {
+                alert(warnings[count]);
+                count++;
+
+                // Change to suspicious cat image after first warning
+                if (count === 1) {
+                    img.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXNta2wyZXdyYm5lOGJuM2oxc255Znl0OGJiYWMxdGh3cjYzYjI3aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BBNYBoYa5VwtO/giphy.gif"; 
+                }
+                if (count === 2) {
+                    img.src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXVoYWMyemRzaG1zbWxzZm83cnk2ajl6ZGhxdHluYXdqd284N21pbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yrrEhlrF4Ek2k/giphy.gif"; 
+                }
+                if (count === 3) {
+                    img.src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc215czl3NDJ1eTB0bmVmMHZuaXd0aWMzMWY0NXhqM29kd2lvZXNoZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8t6ef4FCRAAOgS2EnQ/giphy.gif"; 
+                }
+
+            } else {
+                window.location.href = "ugly.html"; // Redirect after last warning
+            }
+        }
+
+        function goBack() {
+            alert("你做出了正确的选择！🎉"); // Show message before redirecting
+            setTimeout(() => {
+                window.location.href = "last2.html";
+            }, 2000); // 2-second delay before redirecting
+        }
+    </script>
+</body>
+</html>

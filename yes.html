@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yay! 💖</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yay! 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Yay! 🎉 I knew you'd say yes! 💖</h1>
-        <img src="https://www.pngkit.com/png/full/370-3703384_cute-love-heart-clipart.png" alt="Happy Valentine" class="cute-image">
-        <p>Happy Valentine's Day! 💕</p>
-    </div>
+  <!-- Confetti effect -->
+  <div class="confetti" style="left: 10%;"></div>
+  <div class="confetti" style="left: 20%;"></div>
+  <div class="confetti" style="left: 30%;"></div>
+  <div class="confetti" style="left: 40%;"></div>
+  <div class="confetti" style="left: 50%;"></div>
+  <div class="confetti" style="left: 60%;"></div>
+  <div class="confetti" style="left: 70%;"></div>
+  <div class="confetti" style="left: 80%;"></div>
+  <div class="confetti" style="left: 90%;"></div>
+
+  <div class="container">
+    <h1>耶！🎉 我就知道你一定会答应！💖我的宝贝！🥰✨</h1>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXdzMXhuYWl4Z2p2bnR5b3E5ZnAxN29qcWt1am91dmhscm9hb3g0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0GqFhyNd0Wmfo6sM/giphy.gif" alt="Happy Valentine Gif" class="cute-image">
+    <p>看看还有什么好看的哦~~~💖</p>
+    <button id="nextBtn">下一个 ➡️</button>
+  </div>
+  <script>
+    // Redirect to the dating page after 5 seconds
+    setTimeout(() => {
+      window.location.href = "dating.html";
+    }, 5000);
+
+    // Or add a button to let her proceed manually
+    document.getElementById("nextBtn").addEventListener("click", function () {
+      window.location.href = "dating.html";
+    });
+  </script>
 </body>
 </html>

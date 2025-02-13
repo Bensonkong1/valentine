@@ -1,48 +1,150 @@
 body {
     text-align: center;
-    background-color: #ffdde1;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.container {
-    margin-top: 80px;
-}
-
-h1 {
-    font-size: 28px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 32px;
     color: #ff4d6d;
-}
-
-.cute-image {
-    width: 200px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cute-image {
+    width: 180px;
     margin: 20px 0;
-}
-
-.buttons {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons {
     position: relative;
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-button {
+    margin-top: 20px;
+  }
+  
+  button {
     font-size: 20px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s;
-    border-radius: 10px;
-}
-
-#yesBtn {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 25px;
+    font-family: "Pacifico", cursive;
+  }
+  
+  #yesBtn {
     background-color: #ff69b4;
     color: white;
-}
-
-#noBtn {
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+  }
+  
+  #yesBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
+  }
+  
+  #noBtn {
     background-color: #ff6b6b;
     color: white;
     position: absolute;
-}
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+  }
+  
+  #noBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 107, 107, 0.5);
+  }
+  
+  /* Animation for the container */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heart-shaped confetti effect */
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4d6d;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: fall 5s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(110vh) rotate(720deg);
+    }
+  }
 
-
+    /* dating.html css */
+    /* dating.html css */
+    /* dating.html css */
+    /* dating.html css */
+        /* dating.html css */
+            /* dating.html css */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .option {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .option p {
+    font-size: 18px;
+    color: #ff4d6d;
+    margin: 0;
+  }

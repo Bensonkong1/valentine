@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啊啊！你被骗了！😂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>哈哈！被骗了吧！😝</h1>
+        <p>我叫你不要点了吧！看看这些丑丑的照片！🤣</p>
+        <div class="ugly-gallery">
+            <img src="images/ugly1.jpg" alt="Ugly 1">
+            <img src="images/ugly2.jpg" alt="Ugly 2">
+            <img src="images/ugly3.jpg" alt="Ugly 3">
+            <img src="images/ugly4.jpg" alt="Ugly 4">
+            <img src="images/ugly5.jpg" alt="Ugly 5">
+            <video width="320" height="240" controls autoplay>
+                <source src="videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button onclick="goBack()">😂 够了，我认输！去最后的地方吧~</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "last2.html";
+        }
+    </script>
+
+    <style>
+        .ugly-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .ugly-gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkred;
+        }
+    </style>
+</body>
+</html>
